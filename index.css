@@ -2,11 +2,13 @@
 body {background:oldlace;}
 
 
+/*
 @media screen and (max-width: 1200px) {
     body { 
         width: 100%;
     }
 }
+*/
 
 /*
 @media screen and (min-width: 1200px) {
