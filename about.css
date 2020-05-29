@@ -2,21 +2,13 @@ body {background:oldlace;
 }
 
 
-/*
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
     .about { 
-        font-size: 18px;
+        font-size: 15px;
     }
 }
-*/
 
-/*
-@media screen and (min-width: 1200px) {
-    body {
-        width: 30%;
-    }
-}
-*/
+
 
 
 
