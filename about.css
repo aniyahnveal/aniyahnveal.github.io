@@ -2,13 +2,12 @@ body {background:oldlace;
 }
 
 
-/*
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     .about { 
         font-size: 15px;
+        position:sticky;
     }
 }
-*/
 
 
 
