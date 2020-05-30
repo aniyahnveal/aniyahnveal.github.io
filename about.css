@@ -60,6 +60,9 @@ margin: 0 auto;
 
 
 .mp{float:left;
+width: 100%;
+max-width: 425px;
+height: auto;
 }
 
 .about{width:100%;
