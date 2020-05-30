@@ -80,7 +80,7 @@ overflow:auto;
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
-    .about {overflow:auto;
+    .about {overflow:scroll;
         
     }
 }
