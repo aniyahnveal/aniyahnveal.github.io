@@ -119,17 +119,22 @@ display:table;
 clear:both;
 font-size:25px;
 text-align:center;
+width:75%;
+margin:0 auto; 
 background:oldlace;
 color:palevioletred;    
 }
 
+/*
 .hh{float: left;
 width:50%;
 }
 
 .hh1{float: right;
 width: 50%;
+margin-left:10%
 }
+*/
 
 
 footer{background:palevioletred;
