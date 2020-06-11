@@ -29,6 +29,13 @@ a:hover{color:yellow;}
 
 
 
+input {float:right;
+font-size: 25px;}
+
+button {float:right;
+font-size: 25px;}
+
+
 
 
 .HD,.Concealed,.Untitled,.SL,.Abigail,.ID,.B,.IL{width:100%;
