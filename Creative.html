@@ -11,6 +11,7 @@
          <link rel="stylesheet" type="text/css" href="cw.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
+        
     </head>
     <body>
     	
@@ -33,6 +34,7 @@
         <input id="searchbar" onkeyup="search_writings()" type="text"
         name="search" placeholder="Search writings..">
         
+<!--
         <ul id='list'> 
             <li class="writings"><a href="pdfs/Hidden%20Diasters.pdf">Hidden Diasters</a></li> 
             <li class="writings"><a href="pdfs/Concealed.pdf">Concealed</a></li> 
@@ -54,23 +56,67 @@
             <li class="writings"><a href='pdfs/Background%20Sounds_%20A%20Fraction.pdf'>Background Sounds: A Fraction</a></li>
             <li class="writings"><a href='pdfs/00_08_46.pdf'>00:08:46</a></li>
         </ul>
+-->
             
             <script src="./writings.js">
-                / JavaScript code 
-function search_animal() { 
-    let input = document.getElementById('searchbar').value 
-    input=input.toLowerCase(); 
-    let x = document.getElementsByClassName('animals'); 
-      
-    for (i = 0; i < x.length; i++) {  
-        if (!x[i].innerHTML.toLowerCase().includes(input)) { 
-            x[i].style.display="none"; 
-        } 
-        else { 
-            x[i].style.display="list-item";                  
-        } 
-    } 
-} 
+                
+                
+const writings = [<a href="pdfs/Hidden%20Diasters.pdf">Hidden Diasters</a> ,
+           <a href="pdfs/Concealed.pdf">Concealed</a> ,
+           <a href="pdfs/Untitled%20.pdf">Untitled</a> ,
+            <a href='pdfs/Abigail%20(1).pdf'>Abigail: Father's Joy</a> ,
+            <a href='pdfs/SLS.pdf'>Silver Lining</a> ,
+            <a href='pdfs/Spiraling.pdf'>Spiraling</a> ,
+            <a href='pdfs/Mendable.pdf'>Mendable</a> ,
+            <a href='pdfs/Indecisive%20Decision.pdf'>Indecisive Decision</a> ,
+            <a href='pdfs/CE.pdf'>Cognitive Enhancement</a> ,
+            <a href='pdfs/Inadequate%20Love.pdf'>Inadequate Love: A Wife's Lament</a> ,
+            <a href='pdfs/Beyond%20Repair.pdf'>Beyond Repair?</a> ,
+            <a href='pdfs/Beyond%20Repair_%20First%20Draft%20.pdf'>Beyond Repair?:First Draft</a> ,
+            <a href='pdfs/AA%20Poem%20.pdf'>Love our Melanin, Love Each Other</a> ,
+            <a href='pdfs/Static.pdf'>Static</a> ,
+            <a href='pdfs/Reflecting.pdf'>Reflecting</a> ,
+            <a href='pdfs/The%20Included%20Student.pdf'>The "Included" Student</a> ,
+            <a href='pdfs/Heavy%20Prices.pdf'>Heavy Prices</a> ,
+            <a href='pdfs/Background%20Sounds_%20A%20Fraction.pdf'>Background Sounds: A Fraction</a> ,
+            <a href='pdfs/00_08_46.pdf'>00:08:46</a> ,]
+ 
+ 
+document.getElementById('search').addEventListener('input', (e)=>{
+ 
+    let writingsArray = [];
+    
+    if(e.target.value){
+        writingsArrays = writings.filter(writings => writings.toLowerCase().includes(e.target.value));
+        writingsArray = writingsArray.map(writings => `<li>${writings}</li>`)
+    }
+ 
+    showwritingsArray(writingsArray);
+});
+ 
+function showwritingssArray(writingsArray){
+    const html = !writingsArray.length ? '' : writingsArray.join('');
+    document.querySelector('ul').innerHTML = html;
+}
+                
+                
+//function search_writings() { 
+//    var x = document.createElement("INPUT");
+//x.setAttribute("type", "search", "autocomplete", "hidden");
+//    let input = document.getElementById('searchbar').value 
+//    input=input.toLowerCase(); 
+//    let ul = document.getElementsByClassName('writings'); 
+//    let li = ul.getElementsByTagName('li')
+//      
+//    for (i = 0; i < x.length; i++) {  
+//        if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+//            x[i].style.display=""; 
+//        } 
+//        else { 
+//            x[i].style.display="none";                  
+//        } 
+//    } 
+//} 
         
         </script>
                 

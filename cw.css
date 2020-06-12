@@ -55,14 +55,17 @@ font-size: 25px;}
    } 
 */
  
+/*
   #list{ 
     font-size:  25px; 
     margin-left: 90px; 
+    list-style: none;
    } 
  
 .writings{ 
    display: list-item;     
   }  
+*/
 
 
 
