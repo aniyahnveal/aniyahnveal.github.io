@@ -67,7 +67,7 @@ margin: 0 auto;
 
 .responsive{width:100%
   max-width: 460px;
-  height: auto;
+  max-height: 500px;
 }
 
 .about{width:100%;
