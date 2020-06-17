@@ -30,9 +30,11 @@
         
 <!--        <button type="submit">Submit</button>-->
     <!--   <input type="text" placeholder="Search..">-->
+<!--
         <button type="submit"><i class="fa fa-search"></i></button>
         <input id="searchbar" onkeyup="search_writings()" type="text"
         name="search" placeholder="Search writings..">
+-->
         
 <!--
         <ul id='list'> 
@@ -61,43 +63,43 @@
             <script src="./writings.js">
                 
                 
-const writings = [<a href="pdfs/Hidden%20Diasters.pdf">Hidden Diasters</a> ,
-           <a href="pdfs/Concealed.pdf">Concealed</a> ,
-           <a href="pdfs/Untitled%20.pdf">Untitled</a> ,
-            <a href='pdfs/Abigail%20(1).pdf'>Abigail: Father's Joy</a> ,
-            <a href='pdfs/SLS.pdf'>Silver Lining</a> ,
-            <a href='pdfs/Spiraling.pdf'>Spiraling</a> ,
-            <a href='pdfs/Mendable.pdf'>Mendable</a> ,
-            <a href='pdfs/Indecisive%20Decision.pdf'>Indecisive Decision</a> ,
-            <a href='pdfs/CE.pdf'>Cognitive Enhancement</a> ,
-            <a href='pdfs/Inadequate%20Love.pdf'>Inadequate Love: A Wife's Lament</a> ,
-            <a href='pdfs/Beyond%20Repair.pdf'>Beyond Repair?</a> ,
-            <a href='pdfs/Beyond%20Repair_%20First%20Draft%20.pdf'>Beyond Repair?:First Draft</a> ,
-            <a href='pdfs/AA%20Poem%20.pdf'>Love our Melanin, Love Each Other</a> ,
-            <a href='pdfs/Static.pdf'>Static</a> ,
-            <a href='pdfs/Reflecting.pdf'>Reflecting</a> ,
-            <a href='pdfs/The%20Included%20Student.pdf'>The "Included" Student</a> ,
-            <a href='pdfs/Heavy%20Prices.pdf'>Heavy Prices</a> ,
-            <a href='pdfs/Background%20Sounds_%20A%20Fraction.pdf'>Background Sounds: A Fraction</a> ,
-            <a href='pdfs/00_08_46.pdf'>00:08:46</a> ,]
+//const writings = [<a href="pdfs/Hidden%20Diasters.pdf">Hidden Diasters</a> ,
+//           <a href="pdfs/Concealed.pdf">Concealed</a> ,
+//           <a href="pdfs/Untitled%20.pdf">Untitled</a> ,
+//            <a href='pdfs/Abigail%20(1).pdf'>Abigail: Father's Joy</a> ,
+//            <a href='pdfs/SLS.pdf'>Silver Lining</a> ,
+//            <a href='pdfs/Spiraling.pdf'>Spiraling</a> ,
+//            <a href='pdfs/Mendable.pdf'>Mendable</a> ,
+//            <a href='pdfs/Indecisive%20Decision.pdf'>Indecisive Decision</a> ,
+//            <a href='pdfs/CE.pdf'>Cognitive Enhancement</a> ,
+//            <a href='pdfs/Inadequate%20Love.pdf'>Inadequate Love: A Wife's Lament</a> ,
+//            <a href='pdfs/Beyond%20Repair.pdf'>Beyond Repair?</a> ,
+//            <a href='pdfs/Beyond%20Repair_%20First%20Draft%20.pdf'>Beyond Repair?:First Draft</a> ,
+//            <a href='pdfs/AA%20Poem%20.pdf'>Love our Melanin, Love Each Other</a> ,
+//            <a href='pdfs/Static.pdf'>Static</a> ,
+//            <a href='pdfs/Reflecting.pdf'>Reflecting</a> ,
+//            <a href='pdfs/The%20Included%20Student.pdf'>The "Included" Student</a> ,
+//            <a href='pdfs/Heavy%20Prices.pdf'>Heavy Prices</a> ,
+//            <a href='pdfs/Background%20Sounds_%20A%20Fraction.pdf'>Background Sounds: A Fraction</a> ,
+//            <a href='pdfs/00_08_46.pdf'>00:08:46</a> ,]
  
  
-document.getElementById('search').addEventListener('input', (e)=>{
- 
-    let writingsArray = [];
-    
-    if(e.target.value){
-        writingsArrays = writings.filter(writings => writings.toLowerCase().includes(e.target.value));
-        writingsArray = writingsArray.map(writings => `<li>${writings}</li>`)
-    }
- 
-    showwritingsArray(writingsArray);
-});
- 
-function showwritingssArray(writingsArray){
-    const html = !writingsArray.length ? '' : writingsArray.join('');
-    document.querySelector('ul').innerHTML = html;
-}
+//document.getElementById('search').addEventListener('input', (e)=>{
+// 
+//    let writingsArray = [];
+//    
+//    if(e.target.value){
+//        writingsArrays = writings.filter(writings => writings.toLowerCase().includes(e.target.value));
+//        writingsArray = writingsArray.map(writings => `<li>${writings}</li>`)
+//    }
+// 
+//    showwritingsArray(writingsArray);
+//});
+// 
+//function showwritingssArray(writingsArray){
+//    const html = !writingsArray.length ? '' : writingsArray.join('');
+//    document.querySelector('ul').innerHTML = html;
+//}
                 
                 
 //function search_writings() { 
