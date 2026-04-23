@@ -1,4 +1,4 @@
-body {background:mistyrose;
+body {background:rgb(255, 228, 225);
 }
 
 
@@ -103,7 +103,7 @@ and (min-device-width : 320px)
 .wp{width:100%;
 height:auto;
 font-size:30px;
-background:mistyrose;
+background:FFE4E1;
 color:palevioletred;
 text-align:left;
 }
@@ -118,7 +118,7 @@ p {text-align:center;}
 height:120px;
 font-size:22px;
 text-align:center;
-background:mistyrose;
+background:FFE4E1;
 color:palevioletred;}
 
 
@@ -129,7 +129,7 @@ font-size:25px;
 text-align:center;
 width:75%;
 margin:0 auto; 
-background:mistyrose;
+background:FFE4E1;
 color:palevioletred;    
 }
 
